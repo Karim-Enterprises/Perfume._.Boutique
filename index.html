@@ -1,0 +1,209 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Perfume Boutique</title><style>
+    :root{
+        --beige:#f5f0e6;
+        --dark:#1c1c1c;
+        --gold:#b89b5e;
+        --card:#ffffff;
+    }
+
+    *{
+        margin:0;
+        padding:0;
+        box-sizing:border-box;
+        font-family:Arial, Helvetica, sans-serif;
+    }
+
+    body{
+        background:var(--beige);
+        color:var(--dark);
+    }
+
+    header{
+        padding:20px 40px;
+        display:flex;
+        justify-content:space-between;
+        align-items:center;
+        background:rgba(255,255,255,0.6);
+        backdrop-filter: blur(10px);
+        position:sticky;
+        top:0;
+    }
+
+    .logo{
+        font-size:22px;
+        font-weight:bold;
+        letter-spacing:1px;
+    }
+
+    .nav a{
+        margin-left:15px;
+        text-decoration:none;
+        color:var(--dark);
+        font-weight:500;
+    }
+
+    .hero{
+        height:85vh;
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+        align-items:center;
+        text-align:center;
+        padding:20px;
+        background:linear-gradient(rgba(245,240,230,0.7), rgba(245,240,230,1)), url('https://images.unsplash.com/photo-1541643600914-78b084683601') center/cover;
+    }
+
+    .hero h1{
+        font-size:50px;
+        margin-bottom:15px;
+    }
+
+    .hero p{
+        font-size:18px;
+        max-width:600px;
+    }
+
+    .btn{
+        margin-top:20px;
+        padding:12px 20px;
+        background:var(--gold);
+        color:white;
+        border:none;
+        border-radius:8px;
+        cursor:pointer;
+        text-decoration:none;
+        font-weight:bold;
+    }
+
+    section{
+        padding:60px 40px;
+        max-width:1100px;
+        margin:auto;
+    }
+
+    .grid{
+        display:grid;
+        grid-template-columns:repeat(auto-fit, minmax(250px, 1fr));
+        gap:20px;
+    }
+
+    .card{
+        background:var(--card);
+        padding:20px;
+        border-radius:12px;
+        box-shadow:0 5px 15px rgba(0,0,0,0.05);
+    }
+
+    .card h3{
+        margin-bottom:10px;
+    }
+
+    .section-title{
+        text-align:center;
+        margin-bottom:30px;
+        font-size:28px;
+    }
+
+    .cta{
+        text-align:center;
+        padding:40px;
+        background:var(--dark);
+        color:white;
+    }
+
+    .cta a{
+        display:inline-block;
+        margin-top:15px;
+        padding:12px 20px;
+        background:var(--gold);
+        color:white;
+        border-radius:8px;
+        text-decoration:none;
+        font-weight:bold;
+    }
+
+    footer{
+        text-align:center;
+        padding:20px;
+        font-size:14px;
+    }
+
+    .social a{
+        margin:0 10px;
+        color:var(--dark);
+        text-decoration:none;
+        font-weight:bold;
+    }
+</style></head>
+<body><header>
+    <div class="logo">Perfume Boutique</div>
+    <div class="nav">
+        <a href="#about">About</a>
+        <a href="#why">Why Us</a>
+        <a href="#delivery">Delivery</a>
+        <a href="#contact">Contact</a>
+    </div>
+</header><section class="hero">
+    <h1>Luxury Scents, Made to Order</h1>
+    <p>Exclusive perfumes crafted and delivered across Lebanon. Every order is handled personally via WhatsApp for a premium experience.</p>
+    <a class="btn" href="https://wa.me/96170367075" target="_blank">Order on WhatsApp</a>
+</section><section id="about">
+    <h2 class="section-title">About Us</h2>
+    <p style="text-align:center; max-width:800px; margin:auto;">
+        Perfume Boutique is a premium fragrance brand based in Lebanon, offering carefully selected luxury scents.
+        We focus on made-to-order service to ensure freshness, exclusivity, and personal customer care.
+    </p>
+</section><section id="why">
+    <h2 class="section-title">Why Choose Us</h2>
+    <div class="grid">
+        <div class="card">
+            <h3>Made to Order</h3>
+            <p>Every perfume is prepared after your request to guarantee quality and freshness.</p>
+        </div>
+        <div class="card">
+            <h3>Direct WhatsApp Ordering</h3>
+            <p>No complicated checkout — just message us directly and confirm your order instantly.</p>
+        </div>
+        <div class="card">
+            <h3>Luxury Quality</h3>
+            <p>We provide high-end inspired fragrances with long-lasting performance.</p>
+        </div>
+    </div>
+</section><section id="delivery">
+    <h2 class="section-title">Safe Delivery Across Lebanon</h2>
+    <p style="text-align:center; max-width:800px; margin:auto;">
+        We offer secure and reliable delivery to all regions in Lebanon. Each order is carefully packaged to ensure your perfume arrives safely and in perfect condition.
+    </p>
+</section><section class="cta" id="contact">
+    <h2>Order Now</h2>
+    <p>Click below to contact us directly on WhatsApp</p>
+    <a href="https://wa.me/96170367075" target="_blank">Chat on WhatsApp</a><div style="margin-top:20px" class="social">
+    <a href="https://www.instagram.com/perfume._.boutique8" target="_blank">Instagram</a>
+    <a href="#">TikTok</a>
+</div>
+
+</section><section>
+    <h2 class="section-title">Customer Testimonials</h2>
+    <div class="grid">
+        <div class="card">
+            <p>"Ktir awiye l ri7a, w habayta ktir"</p>
+            <strong>- Sherif</strong>
+        </div>
+        <div class="card">
+            <p>"The scent was amazing, I got so many complimemts."</p>
+            <strong>- Fatima</strong>
+        </div>
+        <div class="card">
+            <p>"Beautiful scent, it smells as same as the original"</p>
+            <strong>- Ali</strong>
+        </div>
+    </div>
+    <p style="text-align:center; font-size:12px; margin-top:10px; opacity:0.7;">*Sample testimonials for design preview</p>
+</section><footer>
+    <p>© 2026 Perfume Boutique. All rights reserved.</p>
+</footer></body>
+</html>
